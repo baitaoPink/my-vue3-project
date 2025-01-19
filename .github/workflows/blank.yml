@@ -15,9 +15,10 @@ jobs:
       # 检出代码库
       - name: Checkout repository
         uses: actions/checkout@v3
-        
+
+      # 设置环境变量，告诉 Vite 当前是在 GitHub Pages 环境中
       - name: Set environment variable for GitHub Pages
-        run: echo "VITE_ENV=github" >> $GITHUB_ENV  # 设置 VITE_ENV 环境变量
+        run: echo "VITE_ENV=github" >> $GITHUB_ENV  # 设置 VITE_ENV 为 github
 
       # 设置 Node.js 环境
       - name: Setup Node.js
