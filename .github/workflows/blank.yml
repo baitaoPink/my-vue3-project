@@ -25,10 +25,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # # 运行测试
-      # - name: Run tests
-      #   run: npm run test
-
       # 构建项目
       - name: Build project
         run: npm run build:h5
