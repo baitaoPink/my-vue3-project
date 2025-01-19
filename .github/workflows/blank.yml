@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 确保 GITHUB_TOKEN 拥有仓库的写入权限
 
     steps:
       # 检出代码库
